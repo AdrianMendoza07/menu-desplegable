@@ -6,14 +6,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-image: url(images/bg.png); background-repeat: no-repeat; background-size: cover;">
+<body style="background-image: url(images/bg.png); background-repeat: no-repeat; background-size: 100%;">
 
     <div class="navbar">
         <ul style="color: black;">
-            <li><a>Home</a></li>
-            <li><a>Nike</a></li>
-            <li><a>Products</a></li>
+            <div class="dropdown">
+                <li><button onclick="myFunction()" class="btndown">Home</button></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a>Hero</a>
+                    <a>Main</a>
+                    <a>Footer</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><button onclick="myFunction()" class="btndown">Nike</button></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a>Shops</a>
+                    <a>Location</a>
+                </div>
+            </div>
+            <div id="myDropdown" class="dropdown">
+                <li><button onclick="myFunction()" class="btndown">Products</button></li>
+                <div class="dropdown-content">
+                    <a>AF1</a>
+                    <a>Jordans</a>
+                    <a>T-Shirts</a>
+                    <a>Hoddies</a>
+                </div>
+            </div>
+            
         </ul>
+        
         
     </div>
     <div class="main">
@@ -30,4 +53,5 @@
     </div>
 
 </body>
+<script src="index.js"></script>
 </html>
